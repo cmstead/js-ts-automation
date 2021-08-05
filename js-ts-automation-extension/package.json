@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/cmstead/js-ts-automation.git"
 	},
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -44,7 +44,8 @@
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "node ./test/runTest.js",
-		"build": "vsce package"
+		"build-patch": "npm version patch && vsce package",
+		"build-minor": "npm version minor && vsce package"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.3",
