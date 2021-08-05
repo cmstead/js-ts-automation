@@ -19,24 +19,28 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "typescript,javascript",
-				"path": "./snippets/test.json"
+				"language": "typescript",
+				"path": "./snippets/angular.json"
 			},
 			{
 				"language": "typescript",
 				"path": "./snippets/angular-test.json"
 			},
 			{
-				"language": "typescript",
-				"path": "./snippets/angular.json"
-			},
-			{
-				"language": "typescript",
-				"path": "./snippets/typescript.json"
+				"language": "javascript,typescript",
+				"path": "./snippets/javascript.json"
 			},
 			{
 				"language": "json",
 				"path": "./snippets/snippet.json"
+			},
+			{
+				"language": "typescript,javascript",
+				"path": "./snippets/test.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
 			}
 		]
 	},

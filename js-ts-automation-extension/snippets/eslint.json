@@ -1,0 +1,17 @@
+{
+    "ESLint Ignore Line": {
+        "prefix": "eslint-ignore-disable-line",
+        "body": [
+            "// eslint-disable-line ${1:rule-name}"
+        ],
+        "description": "ESLint ignore a line for given rule(s)"
+    },
+
+    "ESLint Ignore Block or File": {
+        "prefix": "eslint-ignore-disable-line",
+        "body": [
+            "/* eslint-disable-line ${1:rule-name} */"
+        ],
+        "description": "ESLint ignore a block for given rule(s)"
+    }
+}

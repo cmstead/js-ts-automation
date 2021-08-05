@@ -1,0 +1,9 @@
+{
+    "Arrow/Lambda Function": {
+        "prefix": "arrow-function-lambda",
+        "body": [
+            "${1:(${2:parameters})} => ${3:{\n\t${4:body}\n}}"
+        ],
+        "description": "New arrow function/lambda function"
+    }
+}
