@@ -1,0 +1,9 @@
+{
+    "Import": {
+        "prefix": "import",
+        "body": [
+            "import { ${2:Property} } from '${1:importPath}';$0"
+        ],
+        "description": "import statement"
+    }
+}

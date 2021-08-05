@@ -1,0 +1,54 @@
+{
+	"name": "js-ts-automation",
+	"displayName": "JS/TS Automation",
+	"description": "A junk drawer of JavaScript and TypeScript automation tools",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript,javascript",
+				"path": "./snippets/test.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/angular-test.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/angular.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/snippet.json"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	}
+}

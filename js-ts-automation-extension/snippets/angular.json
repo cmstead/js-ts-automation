@@ -1,0 +1,53 @@
+{
+    "Angular Component": {
+        "prefix": "angular-component",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector-name}'",
+            "\ttemplateUrl: '${2:./path/to/file}.html'",
+            "\tstyleUrls: ['${3:./oath/to/file}.scss']",
+            "})",
+            "export class ${4:ClassName} implements OnInit {",
+            "\tconstructor(${5:injectedInstances}){ }",
+            "",
+            "\tngOnInit(): void {",
+            "\t\t",
+            "\t}",
+            "}"
+        ],
+        "description": "New Angular component"
+    },
+    "Angular Service": {
+        "prefix": "angular-service",
+        "body": [
+            "import { Injectable } from '@angular/core';",
+            "",
+            "@Injectable({",
+            "\tprovidedIn: '${1:root}'",
+            "})",
+            "export class ${4:ClassName} {",
+            "\t\t$0",
+            "}"
+        ],
+        "description": "New Angular service"
+    },
+    "Angular Module": {
+        "prefix": "angular-module",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "",
+            "@NgModule({",
+            "\tdeclarations: [${1:Component}]",
+            "\timports: [",
+            "\t\tCommonModule${2:, ${3:Module}}",
+            "\t]",
+            "})",
+            "export class ${4:ClassName} {",
+            "\t\t$0",
+            "}"
+        ],
+        "description": "New Angular module"
+    },
+}

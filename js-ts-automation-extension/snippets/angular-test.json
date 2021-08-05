@@ -1,0 +1,26 @@
+{
+	"Angular Test Component Setup": {
+		"prefix": "angular-test-component-setup",
+		"body": [
+			"beforeEach(() => {",
+			"\tTestBed.configureTestingModule({",
+			"\t\tdeclarations: [ ${1:Component} ]",
+			"\t})",
+			"\t\t.compileComponents();",
+			"})"
+		],
+		"description": "Angular component setup for test files"
+	},
+	"Angular Test Component Factory": {
+		"prefix": "angular-test-component-factory",
+		"body": [
+			"function () {",
+			"\tconst fixture = TestBed.createComponent(${1:Component});",
+			"\tconst component = fixture.componentInstance;",
+			"\tfixture.detectChanges();",
+			"\treturn { fixture, component };",
+			"}"
+		],
+		"description": "A function that returns a component and a fixture each time it's called"
+	},
+}
