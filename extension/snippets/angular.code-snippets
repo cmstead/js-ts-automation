@@ -1,5 +1,6 @@
 {
     "Angular Component": {
+		"scope": "typescript",
         "prefix": "angular-component",
         "body": [
             "import { Component, OnInit } from '@angular/core';",
@@ -20,6 +21,7 @@
         "description": "New Angular component"
     },
     "Angular Service": {
+		"scope": "typescript",
         "prefix": "angular-service",
         "body": [
             "import { Injectable } from '@angular/core';",
@@ -34,6 +36,7 @@
         "description": "New Angular service"
     },
     "Angular Module": {
+		"scope": "typescript",
         "prefix": "angular-module",
         "body": [
             "import { NgModule } from '@angular/core';",

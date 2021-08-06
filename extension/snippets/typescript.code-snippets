@@ -1,5 +1,6 @@
 {
     "Import": {
+		"scope": "javascript,typescript",
         "prefix": "import",
         "body": [
             "import { ${2:Property} } from '${1:importPath}';$0"

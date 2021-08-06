@@ -1,5 +1,6 @@
 {
     "ESLint Ignore Line": {
+		"scope": "javascript,typescript",
         "prefix": "eslint-ignore-disable-line",
         "body": [
             "// eslint-disable-line ${1:rule-name}"
@@ -8,6 +9,7 @@
     },
 
     "ESLint Ignore Block or File": {
+		"scope": "javascript,typescript",
         "prefix": "eslint-ignore-disable-line",
         "body": [
             "/* eslint-disable-line ${1:rule-name} */"

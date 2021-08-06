@@ -1,5 +1,6 @@
 {
 	"Angular Test Component Setup": {
+		"scope": "typescript",
 		"prefix": "angular-test-component-setup",
 		"body": [
 			"beforeEach(() => {",
@@ -12,6 +13,7 @@
 		"description": "Angular component setup for test files"
 	},
 	"Angular Test Component Factory": {
+		"scope": "typescript",
 		"prefix": "angular-test-component-factory",
 		"body": [
 			"function () {",

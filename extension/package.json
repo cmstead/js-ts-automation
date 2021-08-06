@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/cmstead/js-ts-automation.git"
 	},
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -19,28 +19,22 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "typescript",
-				"path": "./snippets/angular.json"
+				"path": "./snippets/angular.code-snippets"
 			},
 			{
-				"language": "typescript",
-				"path": "./snippets/angular-test.json"
+				"path": "./snippets/angular-test.code-snippets"
 			},
 			{
-				"language": "javascript,typescript",
-				"path": "./snippets/javascript.json"
+				"path": "./snippets/javascript.code-snippets"
 			},
 			{
-				"language": "json",
-				"path": "./snippets/snippet.json"
+				"path": "./snippets/snippet.code-snippets"
 			},
 			{
-				"language": "typescript,javascript",
-				"path": "./snippets/test.json"
+				"path": "./snippets/test.code-snippets"
 			},
 			{
-				"language": "typescript",
-				"path": "./snippets/typescript.json"
+				"path": "./snippets/typescript.code-snippets"
 			}
 		]
 	},

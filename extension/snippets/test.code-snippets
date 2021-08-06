@@ -1,5 +1,6 @@
 {
     "Jasmine Test Describe": {
+		"scope": "javascript,typescript",
 		"prefix": "test-describe",
 		"body": [
 			"describe('${1:Suite description}', () => {",
@@ -9,6 +10,7 @@
 		"description": "Jasmine test suite, describe"
 	},
 	"Jasmine Test It": {
+		"scope": "javascript,typescript",
 		"prefix": "test-it",
 		"body": [
 			"it('${1:Test description}', ${2:async }() => {",
@@ -18,6 +20,7 @@
 		"description": "Jasmine test, it"
 	},
 	"Jasmine BeforeEach": {
+		"scope": "javascript,typescript",
 		"prefix": "before-each",
 		"body": [
 			"beforeEach(${1:async }() => ${2:{\n\t${3:// test setup}\n}});"
@@ -25,6 +28,7 @@
 		"description": "Jasmine Test, beforeEach"
 	},
 	"Jasmine Expect": {
+		"scope": "javascript,typescript",
 		"prefix": "expect",
 		"body": [
 			"expect(${1:actualValue}).${2|toBe,toEqual|}(${3:expectedValue});"
