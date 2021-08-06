@@ -48,8 +48,9 @@
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "node ./test/runTest.js",
-		"build-patch": "npm version patch && vsce package",
-		"build-minor": "npm version minor && vsce package"
+		"build": "vsce package",
+		"build-patch": "npm version patch && npm run build",
+		"build-minor": "npm version minor && npm run build"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.3",
