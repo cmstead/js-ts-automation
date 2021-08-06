@@ -1,6 +1,6 @@
 {
     "Snippet snippet": {
-		"scope": "json",
+		"scope": "json,code-snippets",
         "prefix": "snippet",
         "body": [
             "\"$1\": {",

@@ -3,7 +3,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "test-describe",
 		"body": [
-			"describe('${1:Suite description}', () => {",
+			"describe('${1:Suite description}', ${2|function (),() =>|} {",
 			"\t$0",
 			"});"
 		],
@@ -13,7 +13,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "test-it",
 		"body": [
-			"it('${1:Test description}', ${2:async }() => {",
+			"it('${1:Test description}', ${2| ,async |}${3|function (),() =>|} {",
 			"\t$0",
 			"});"
 		],
@@ -23,7 +23,9 @@
 		"scope": "javascript,typescript",
 		"prefix": "before-each",
 		"body": [
-			"beforeEach(${1:async }() => ${2:{\n\t${3:// test setup}\n}});"
+			"beforeEach(${1:async }${2|function (),() =>|} {",
+			"\t${4:// test setup}",
+			"});"
 		],
 		"description": "Jasmine Test, beforeEach"
 	},
@@ -32,6 +34,14 @@
 		"prefix": "expect",
 		"body": [
 			"expect(${1:actualValue}).${2|toBe,toEqual|}(${3:expectedValue});"
+		],
+		"description": "Jasmine test expectation"
+	},
+	"Approvals Verify": {
+		"scope": "javascript,typescript",
+		"prefix": "verify",
+		"body": [
+			"this.${1|verify,verifyAsJSON|}(${2:actualValue});"
 		],
 		"description": "Jasmine test expectation"
 	}

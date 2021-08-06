@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/cmstead/js-ts-automation.git"
 	},
-	"version": "0.4.2",
+	"version": "0.7.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
