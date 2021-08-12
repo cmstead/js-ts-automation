@@ -3,8 +3,27 @@
 		"scope": "javascript,typescript",
         "prefix": "import",
         "body": [
-            "import { ${2:Property} } from '${1:importPath}';$0"
+            "import ${2:${3:TopLevelPackage}, }{ ${3:Properties} } from '${1:importPath}';$0"
         ],
         "description": "import statement"
+    },
+    "New Export Const": {
+		"scope": "javascript,typescript",
+        "prefix": "export-const",
+        "body": [
+            "export const ${1:name}${2: = ${3:value}};$0"
+        ],
+        "description": "Export new constant value"
+    },
+
+    "New Export Class": {
+		"scope": "javascript,typescript",
+        "prefix": "export-class",
+        "body": [
+            "export class ${1:ClassName}${2:extends ${3:SuperClassName}} {",
+            "$0",
+            "}"
+        ],
+        "description": "Export new class"
     }
 }
