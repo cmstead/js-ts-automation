@@ -1,20 +1,3 @@
 {
-    "Arrow/Lambda Function": {
-		"scope": "javascript,typescript",
-        "prefix": "arrow-function-lambda",
-        "body": [
-            "${1:(${2:parameters})} => ${3:{\n\t${4:body}\n}}"
-        ],
-        "description": "New arrow function/lambda function"
-    },
-    "Constructor": {
-		"scope": "javascript,typescript",
-        "prefix": "ctor-constructor",
-        "body": [
-            "constructor (${1:parameters}) {",
-            "\t${2:// logic here}",
-            "}"
-        ],
-        "description": "New constructor method"
-    }
+    
 }

@@ -17,6 +17,16 @@
 	"activationEvents": [],
 	"main": "./extension.js",
 	"contributes": {
+		"languages": [
+			{
+				"aliases": ["json"],
+				"id": "json",
+				"extensions": [
+					".json",
+					".code-snippets"
+				]
+			}
+		],
 		"snippets": [
 			{
 				"path": "./snippets/angular.code-snippets"
